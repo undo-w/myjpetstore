@@ -103,6 +103,10 @@
         <servlet-name>ViewDailyLogServlet</servlet-name>
         <servlet-class>org.csu.mypetstore.web.servlets.ViewDailyLogServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UsernameExistServlet</servlet-name>
+        <servlet-class>org.csu.mypetstore.web.servlets.UsernameExistServlet</servlet-class>
+    </servlet>
 
 
 
@@ -206,6 +210,10 @@
     <servlet-mapping>
         <servlet-name>ViewDailyLogServlet</servlet-name>
         <url-pattern>/viewDailyLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsernameExistServlet</servlet-name>
+        <url-pattern>/usernameExist</url-pattern>
     </servlet-mapping>
 
 

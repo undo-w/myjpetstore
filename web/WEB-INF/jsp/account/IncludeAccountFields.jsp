@@ -50,7 +50,7 @@
 	<tr>
 		<td>Language Preference:</td>
 		<td>
-			<select name="account.languagePreference" value="${sessionScope.account.favouriteCategoryId}">
+			<select name="account.languagePreference" value="${sessionScope.account.languagePreference}">
 				<c:if test="${sessionScope.account!=null}">
 					<option>${sessionScope.account.languagePreference}</option>
 				</c:if>
@@ -67,7 +67,7 @@
 		<td>
 		<select name="account.favouriteCategoryId" value="${sessionScope.account.favouriteCategoryId}">
 			<option value="FISH">FISH</option>
-			<option selected="selected" value="DOGS">DOGS</option>
+			<option value="DOGS">DOGS</option>
 			<option value="REPTILES">REPTILES</option>
 			<option value="CATS">CATS</option>
 			<option value="BIRDS">BIRDS</option>
