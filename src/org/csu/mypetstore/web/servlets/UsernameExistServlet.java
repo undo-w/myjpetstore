@@ -16,22 +16,25 @@ public class UsernameExistServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
 
-        AccountService accountService = new AccountService();
-        Account account = accountService.getAccount(username);
+            AccountService accountService = new AccountService();
+            Account account = accountService.getAccount(username);
 
-        // 设置响应的类型
-        resp.setContentType("text/plain");
-        PrintWriter out = resp.getWriter();
+            // 设置响应的类型
+            resp.setContentType("text/plain");
+            PrintWriter out = resp.getWriter();
 
-        if(account == null){
-            // 用户不存在，可以使用该用户名
-            out.print("Not Exist");
-        }
-        else{
-            // 用户名已存在，无法使用该用户名
-            out.print("Exist");
-        }
-        out.flush();
-        out.close();
+            if(account == null){
+                // 用户不存在，可以使用该用户名
+                out.print("Not Exist");
+            }
+            else{
+                // 用户名已存在，无法使用该用户名
+                out.print("Exist");
+            }
+
+            //关闭流，释放资源
+            out.flush();
+            out.close();
+
     }
 }

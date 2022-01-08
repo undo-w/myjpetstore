@@ -24,5 +24,6 @@
     <orderEntry type="library" exported="" name="jstl (1)" level="project" />
     <orderEntry type="library" exported="" name="standard" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.17" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>

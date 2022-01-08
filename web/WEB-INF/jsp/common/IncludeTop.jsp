@@ -13,8 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <link rel="StyleSheet" href="CSS/jpetstore.css" type="text/css"
-        media="screen" />
+  <link rel="StyleSheet" href="CSS/jpetstore.css" type="text/css" media="screen" />
 
   <meta name="generator"
         content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org" />
